@@ -5,16 +5,18 @@
 # Выведите минимальное количество монет, которые нужно перевернуть
 
 
-n = int(input())
-heads = 0
-tails = 0
-for i in range(n):
-    coin = int(input())
-    if coin == 0:
-        heads += 1
+n = int(input("Введите число монет: "))
+
+countG = 0
+countR = 0
+
+for i in range (n):
+    numI = int(input("Это герб или решка?:"))
+    if numI==0:
+        countG+=1
     else:
-        tails += 1
-if heads < tails:
-    print(f'{heads} heads')
+        countR+=1
+if countG<countR:
+    print(f"Нужно перевернуть {countG} монетки(ок)")
 else:
-    print(f'{tails} tails')
+    print(f"Нужно перевернуть {countR} монетки(ок)")
