@@ -8,4 +8,4 @@ numP = int(input("Назовите произведение этих чисел:
 for i in range(1, 1001):
     for j in range(1, 1001):
         if i+j == numS and i*j == numP:
-            print(f"Первое число это {i}, а второе - {j}")
+            print(f"Первое число это {i}, второе - {j}")
