@@ -3,8 +3,8 @@
 # (т.е. не меньше заданного минимума и не больше заданного максимума)
 
 import random
-array = [random.randint(1, 100)
-         for _ in range(10)]
+array = sorted([random.randint(1, 100)
+                for _ in range(10)])
 
 print(array)
 
