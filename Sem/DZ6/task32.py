@@ -2,12 +2,15 @@
 # значения которых принадлежат заданному диапазону
 # (т.е. не меньше заданного минимума и не больше заданного максимума)
 
-indices = [1, 2, 4, 6, 80, 20, 11, 30, 12, 55]
+array = [1, 2, 4, 6, 80, 20, 11, 30, 12, 55]
 
 minvalue = int(input("Введите минимальное значение: "))
 maxvalue = int(input("Введите максимальное значение: "))
 
+indices = []
 
-for i in range(len(indices)):
-    if minvalue <= indices[i] <= maxvalue:
-        print(i)
+for i in range(len(array)):
+    if array[i] >= minvalue and array[i] <= maxvalue:
+        indices.append(i)
+
+print("Индексы элементов массива, значения которых принадлежат заданному диапазону:", indices)
